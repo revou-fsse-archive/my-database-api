@@ -1,6 +1,6 @@
 import "express-async-errors";
 import express from "express";
-import { EXPRESS_PORT } from "./config";
+import { PORT } from "./config";
 import { PrismaClient } from "@prisma/client";
 import { buildSellerRoute } from "./routes/seller";
 import { buildProductRoute } from "./routes/product";
@@ -12,6 +12,6 @@ app.use(express.json());
 app.use("/sellers", buildSellerRoute({ prismaClient }));
 app.use("/products", buildProductRoute({ prismaClient }));
 
-app.listen(EXPRESS_PORT, () =>
-    console.log(`listening at 0.0.0.0:${EXPRESS_PORT}`)
+app.listen(PORT, () =>
+    console.log(`listening at 0.0.0.0:${PORT}`)
 );
