@@ -2,7 +2,7 @@
 
 you can check the requests by importing `insomnia.json` to your ![insomnia](https://insomnia.rest).
 
-Sample URL: https://my-database-api.up.railway.app
+Sample URL: https://revou-db.agus.dev
 
 ## Running locally
 
